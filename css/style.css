@@ -11,3 +11,30 @@ ol,
 ul {
   list-style: none;
 }
+
+/* logo style */
+h1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+h1 img {
+  box-shadow: 5px 5px 3px #888;
+}
+
+/* sns style */
+.sns {
+  position: fixed;
+  left: 60px;
+  top: 30px;
+}
+
+.sns li {
+  float: left;
+  margin-right: 30px;
+}
+
+.sns li i {
+  font-size: 25px;
+}
