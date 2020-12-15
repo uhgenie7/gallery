@@ -53,6 +53,28 @@ header div a .fa:hover {
   transform: scale(1.2);
 }
 
+/* nav style*/
+nav {
+  position: fixed;
+  top: 20%;
+  left: 60px;
+  z-index: 2;
+}
+
+nav ul li {
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+nav ul li:hover {
+  color: #888;
+}
+
+/* slogan */
 .txt {
   position: fixed;
   top: 50%;
