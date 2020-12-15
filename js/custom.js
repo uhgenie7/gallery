@@ -30,7 +30,9 @@ $(function(){
 
   $("article h2").click(function(e){
     e.preventDefault();
+    $("article").removeClass("on");
     $(this).parent().addClass("on");
+
   })
 
   $("article span").click(function(){
