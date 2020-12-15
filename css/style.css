@@ -35,6 +35,36 @@ h1 img {
   margin-right: 30px;
 }
 
+.sns li i:hover {
+  transition: scale(1.2);
+}
+
 .sns li i {
   font-size: 25px;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+/* slogan style */
+.txt {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  text-align: right;
+  font-size: 100px;
+  color: #fff;
+  line-height: 0.5;
+}
+
+.txt span {
+  color: #aaa;
+}
+
+.txt em {
+  font-size: 18px;
+  color: #888;
+  font-style: normal;
+  font-weight: bold;
+  font-family: arial;
 }
