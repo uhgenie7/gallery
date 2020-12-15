@@ -97,4 +97,126 @@ article {
   border-radius: 5px;
   box-shadow: 3px 3px 3px #bbb;
   overflow: hidden;
+  transition: all 0.6s;
+}
+
+/* portfolio gallery title style */
+article h2 {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  background: #111;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.4s;
+  z-index: 2;
+}
+
+article:hover h2 {
+  opacity: 0.8;
+}
+
+article h2 a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+  line-height: 3.5;
+}
+
+article strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+article strong img {
+  height: 300px;
+}
+
+article:hover strong {
+  opacity: 1;
+}
+
+article p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(0);
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+article p img {
+  height: 100%;
+}
+
+article em {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  bottom: 50px;
+  padding: 10px 20px;
+  background: #000;
+  right: -300px;
+  transition: all 0.6s;
+}
+
+article span {
+  position: absolute;
+  top: 100px;
+  z-index: 3;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  top: 110px;
+  right: -300px;
+}
+
+/* 포폴 확대 상태 스타일 */
+article.on {
+  width: 780px;
+  height: 500px;
+}
+
+article.on h2 {
+  top: 100px;
+  height: 100px;
+  background: #111;
+  opacity: 0.3;
+}
+
+article.on h2 a {
+  font-size: 30px;
+  color: #fff;
+}
+
+article.on strong {
+  opacity: 0;
+}
+
+article.on p {
+  transform: translateY(-50%);
+  height: 500px;
+  opacity: 1;
+}
+
+article.on em {
+  right: 20px;
+}
+
+article.on span {
+  right: 20px;
 }
