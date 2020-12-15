@@ -52,3 +52,25 @@ header div a .fa {
 header div a .fa:hover {
   transform: scale(1.2);
 }
+
+.txt {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 100px;
+  color: white;
+  text-align: right;
+  line-height: 57px;
+}
+
+.txt span {
+  color: #aaa;
+}
+
+em {
+  font-family: "arial";
+  font-size: 18px;
+  color: #888;
+  font-style: normal;
+}
