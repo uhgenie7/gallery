@@ -51,4 +51,10 @@ $(function(){
   })
 
 
+  $("nav li").click(function(){
+    let navIndex = $(this).index();
+    let navMove = navIndex * 1000;
+
+    $("html, body").scrollTop(navMove);
+  })
 });
