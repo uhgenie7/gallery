@@ -30,9 +30,20 @@ $(function(){
 
   $("article h2").click(function(e){
     e.preventDefault();
+
+    // article 클릭 시 해당 article이 맨 앞으로 가기
+    let index = $(this).parent().index();
+    let nowPos = index * 200;
+
+    let src = $(this).find("a").attr("href");
+    
+    $("article p img").attr("src", "");
+    $(this).siblings("p").find("img").attr("src",src);
+
     $("article").removeClass("on");
     $(this).parent().addClass("on");
 
+    $("html,body").scrollTop(nowPos);
   })
 
   $("article span").click(function(){
